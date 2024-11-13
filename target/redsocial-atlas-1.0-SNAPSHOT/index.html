@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Social - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <!-- Contenedor Principal -->
+  <div class="container">
+    <!-- Barra Lateral -->
+    <aside class="sidebar">
+      <h2>Red Social</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#" id="perfil-link">Perfil</a></li>
+          <li><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+          <li><a href="login.html" class="login-link">Iniciar sesión</a></a></li>
+          <li><a href="register.html" class="register-link">Registrarse</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Sección Principal -->
+    <main class="feed">
+      <!-- Botón para crear publicación -->
+      <button class="crear-publicacion-btn">+ Crear Publicación</button>
+
+      <!-- Ejemplo de una publicación -->
+      <section class="post" id="post-ejemplo">
+        <div class="post-header">
+          <img src="img/avatar.png" alt="Avatar" class="avatar">
+          <h3>Usuario Ejemplo</h3>
+        </div>
+        <p>Contenido de ejemplo para un post.</p>
+        <div class="post-actions">
+          <button class="like-btn">❤️ 0 Likes</button>
+          <button class="comment-btn">💬 Comentar</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal para Crear Publicación -->
+  <div class="modal" id="crear-post-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Crear Publicación</h2>
+      <form id="crear-post-form" onsubmit="crearPost(event)">
+        <textarea name="contenido" placeholder="¿Qué estás pensando?" rows="4" required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal para Iniciar Sesión -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="login-form" onsubmit="login(event)">
+        <input type="email" name="email" placeholder="Correo" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal para Registrarse -->
+  <div class="modal" id="register-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registrarse</h2>
+      <form id="register-form" onsubmit="register(event)">
+        <input type="text" name="nombre" placeholder="Nombre Completo" required>
+        <input type="email" name="email" placeholder="Correo" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
