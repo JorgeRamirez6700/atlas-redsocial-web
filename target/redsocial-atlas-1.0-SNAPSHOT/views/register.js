@@ -1,3 +1,8 @@
+/* 
+    Created on : Nov 19, 2024, 5:13:39 AM
+    Author     : RavenOS
+*/
+
 import { createUser, signInGoogle } from '../../lib/firebase/autenticar';
 import { onNavigate } from '../../lib/router/index';
 
@@ -14,7 +19,7 @@ export function register() {
   // Logo
   const registerLogo = document.createElement('img');
   registerLogo.classList.add('logoR');
-  registerLogo.src = '../imagenes/logo-marchantes.png';
+  registerLogo.src = '../imagenes/logo-atlas.png';
   registerContainer.appendChild(registerLogo);
 
   // Formulario

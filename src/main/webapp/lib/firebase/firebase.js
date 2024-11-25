@@ -8,11 +8,12 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 export const firebaseConfig = {
-  apiKey: '',
-  authDomain: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: '',
-  measurementId: '',
+  apiKey: "AIzaSyAObxJeqZdWNbmiOHwqUHfRRSK0Ppv7Aaw",
+  authDomain: "atlas-redsocial.firebaseapp.com",
+  projectId: "atlas-redsocial",
+  storageBucket: "atlas-redsocial.firebasestorage.app",
+  messagingSenderId: "640791104002",
+  appId: "1:640791104002:web:a9b32ce615b502010a751b",
+  measurementId: "G-CMNNB9KKH6"
+
 };

@@ -1,3 +1,8 @@
+/* 
+    Created on : Nov 19, 2024, 5:13:39 AM
+    Author     : RavenOS
+*/
+
 import { getAuth, signOut } from 'firebase/auth';
 import { onNavigate } from '../../lib/router/index';
 import {
@@ -22,7 +27,7 @@ export function feed() {
   // Creamos un elemento <img> y le asignamos la clase 'logoF'
   const logoFeed = document.createElement('img');
   logoFeed.classList.add('logoF');
-  logoFeed.src = '../imagenes/logo-marchantes-feed.png';
+  logoFeed.src = '../imagenes/logo-atlas-feed.png';
   containerFeed.appendChild(logoFeed);
 
   // Creamos un elemento <div> y le asignamos la clase 'compose-container'
@@ -129,7 +134,7 @@ export function feed() {
 
         // Creamos un elemento <article>
         const listItem = document.createElement('article');
-        const postContent = `${post.name == null ? post.email : post.name}: ${post.text}`;
+        const postContent = `${post.name === null ? post.email : post.name}: ${post.text}`;
         listItem.textContent = postContent;
 
         // Creamos un elemento <textarea> para editar el campo de texto
@@ -196,7 +201,7 @@ export function feed() {
             await editPost(doc.id, { text: newPostData });
             // console.log('Post editado exitosamente');
             listItem.removeChild(listItem.firstChild);
-            listItem.textContent = `${post.name == null ? post.email : post.name}: ${newPostData}`;
+            listItem.textContent = `${post.name === null ? post.email : post.name}: ${newPostData}`;
           } catch (error) {
             // console.error('Error al editar el post:', error);
           }

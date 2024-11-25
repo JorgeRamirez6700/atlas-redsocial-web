@@ -7,3 +7,115 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : RavenOS
 */
 
+.containerR{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.backgroundImgR {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-image: url('../imagenes/background-register.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+}
+
+.logoR {
+  content: url('../imagenes/logo-atlas.png');
+  display: block;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+.formularioR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.continuarBtnR {
+  min-width: 130px;
+  height: 40px;
+  color: #2d2b2b;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0;
+  margin-top: 10%;
+}
+
+.googleBtnR {
+  min-width: 130px;
+  height: 40px;
+  color: #2d2b2b;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0;
+  margin-top: 50px;
+}
+
+/*
+.logoGoogleR {
+  margin-right: 8px;
+}
+*/
+
+/* Dispositivos móviles pequeños (por ejemplo, iPhone) */
+@media only screen and (max-width: 480px) {
+  /* Agrega tus estilos específicos para dispositivos móviles pequeños aquí */
+}
+
+/* Dispositivos móviles medianos (por ejemplo, tablets) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Agrega tus estilos específicos para dispositivos móviles medianos aquí */
+}
+
+/* Dispositivos móviles grandes (por ejemplo, tablets en modo apaisado) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Agrega tus estilos específicos para dispositivos móviles grandes aquí */
+}
+
+/* Pantallas pequeñas y dispositivos con resolución baja */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  /* Agrega tus estilos específicos para pantallas pequeñas aquí */
+}
+
+/* Pantallas medianas y dispositivos con resolución media */
+@media only screen and (min-width: 1367px) and (max-width: 1680px) {
+  /* Agrega tus estilos específicos para pantallas medianas aquí */
+}
+
+/* Pantallas grandes y dispositivos con resolución alta */
+@media only screen and (min-width: 1681px) {
+  /* Agrega tus estilos específicos para pantallas grandes aquí */
+}
