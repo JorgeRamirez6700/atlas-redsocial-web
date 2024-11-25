@@ -1,9 +1,9 @@
 // Importar las funciones necesarias y vistas
 import { addRoutes, onNavigate } from './lib/router/index.js';
-import { home } from './views/home.js';
-import { login } from './views/login.js';
-import { register } from './views/register.js';
-import { feed } from './views/feed.js';
+import { home } from '../views/home.js';
+import { login } from '../views/login.js';
+import { register } from '../views/register.js';
+import { feed } from '../views/feed.js';
 
 // Definir las rutas y asignar las vistas correspondientes a cada ruta
 addRoutes({
