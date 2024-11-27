@@ -1,8 +1,9 @@
 /* 
-    Created on : Nov 19, 2024, 5:13:39 AM
-    Author     : RavenOS
-*/
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
+ */
 
+<<<<<<< HEAD
 export function login() {
   const loginContainer = document.createElement('main');
   loginContainer.classList = 'containerL';
@@ -106,3 +107,6 @@ export function login() {
 
   return loginContainer;
 }
+=======
+
+>>>>>>> parent of 6d8b8bd (Agregadas vistas y CSS, Deberia Funcionar.)
