@@ -1,5 +1,6 @@
 /* 
 <<<<<<< HEAD
+<<<<<<< HEAD
     Created on : Nov 19, 2024, 5:13:39 AM
     Author     : RavenOS
 */
@@ -29,6 +30,13 @@ const goToRegister = () => {
 document.getElementById('login-btn').addEventListener('click', goToLogin);
 document.getElementById('register-btn').addEventListener('click', goToRegister);
 
+=======
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
+ */
+
+
+>>>>>>> parent of 6d8b8bd (Agregadas vistas y CSS, Deberia Funcionar.)
 =======
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template

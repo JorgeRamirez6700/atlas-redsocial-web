@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* 
     Created on : Nov 19, 2024, 5:13:39 AM
     Author     : RavenOS
 */
 
 =======
+=======
+>>>>>>> parent of 6d8b8bd (Agregadas vistas y CSS, Deberia Funcionar.)
 import { createUser, signInGoogle } from '../../lib/firebase/autenticar';
 import { onNavigate } from '../../lib/router/index';
 >>>>>>> parent of 6d8b8bd (Agregadas vistas y CSS, Deberia Funcionar.)

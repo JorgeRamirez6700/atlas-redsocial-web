@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* 
     Created on : Nov 19, 2024, 5:13:39 AM
     Author     : RavenOS
@@ -19,6 +20,8 @@ const sendButton = createButton(['compose-option', 'compose-send'], 'Publicar', 
     textBox.value = ''; // Limpiar el textarea después de publicar
     loadPosts(); // Recargar los posts después de publicar
 =======
+=======
+>>>>>>> parent of 6d8b8bd (Agregadas vistas y CSS, Deberia Funcionar.)
 import { getAuth, signOut } from 'firebase/auth';
 import { onNavigate } from '../../lib/router/index';
 import {

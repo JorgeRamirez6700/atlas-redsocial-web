@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
  */
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 export function login() {
@@ -108,5 +109,9 @@ export function login() {
   return loginContainer;
 }
 =======
+
+>>>>>>> parent of 6d8b8bd (Agregadas vistas y CSS, Deberia Funcionar.)
+=======
+
 
 >>>>>>> parent of 6d8b8bd (Agregadas vistas y CSS, Deberia Funcionar.)
