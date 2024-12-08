@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Publicación</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Crear una nueva publicación</h1>
+    <form id="formCrearPublicacion">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="contenido">Contenido:</label>
+        <textarea id="contenido" name="contenido" required></textarea>
+
+        <label for="anclada">Anclada:</label>
+        <input type="checkbox" id="anclada" name="anclada">
+
+        <button type="submit">Crear Publicación</button>
+    </form>
+
+    <script src="js/crear-publicacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>RegistroServlet</servlet-name>
+        <servlet-class>controlador.RegistroServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controlador.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistroServlet</servlet-name>
+        <url-pattern>/RegistroServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+      <!-- Error para Código HTTP 404 (Página no encontrada) -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error-http.jsp</location>
+    </error-page>
+
+    <!-- Error para Excepciones de Java -->
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/error-excepcion.jsp</location>
+    </error-page>
+
+    <!-- Error para otros códigos HTTP (por ejemplo, 500) -->
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error-http.jsp</location>
+    </error-page>
+
+</web-app>

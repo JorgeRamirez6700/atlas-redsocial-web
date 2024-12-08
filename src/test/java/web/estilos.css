@@ -1,0 +1,182 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 6, 2024, 11:45:11 PM
+    Author     : RavenOS
+*/
+
+/* Reset de márgenes y padding para tener una base consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establecer la fuente base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px;  /* Para evitar que el contenido quede oculto debajo del header */
+}
+
+/* Cabecera común para todas las páginas */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Estilos para los formularios */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los campos del formulario */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Botones */
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Enlaces */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+    margin: 20px;
+}
+
+/* Estilos para las publicaciones */
+.post {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos para las tablas (si las hay) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Estilo para los mensajes de error o éxito */
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Estilos específicos para el login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo para la cabecera de la página de login */
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+

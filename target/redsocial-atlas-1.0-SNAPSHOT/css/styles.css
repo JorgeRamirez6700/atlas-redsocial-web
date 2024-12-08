@@ -1,60 +1,277 @@
+/* Reset básico */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-.container {
-  background: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 15px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1em;
 }
 
-.form-group {
-  margin-bottom: 15px;
+header nav ul {
+    list-style: none;
+    display: flex;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+header nav ul li {
+    margin-right: 1em;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 8px;
-  margin: 4px 0;
-  box-sizing: border-box;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
 }
 
-button:hover {
-  background-color: #0056b3;
+.publicaciones article {
+    background: #fff;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-p {
-  margin-top: 15px;
-  font-size: 14px;
+.publicaciones h2 {
+    margin-bottom: 1em;
+}
+
+.publicacion h3 {
+    color: #333;
+}
+
+.publicacion .autor {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 1em;
+}
+
+.comentarios h4 {
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+/* Estilos para la página de login */
+.login {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.login input {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login button {
+    padding: 0.8em;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background: #555;
+}
+/* Estilos para la página de crear publicaciones */
+.crear-publicacion {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crear-publicacion h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.crear-publicacion form {
+    display: flex;
+    flex-direction: column;
+}
+
+.crear-publicacion label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.crear-publicacion input,
+.crear-publicacion textarea,
+.crear-publicacion select {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.crear-publicacion button {
+    padding: 0.8em;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.crear-publicacion button:hover {
+    background: #555;
+}
+
+/* Estilos para la página de administración de publicaciones */
+.admin-publicaciones {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.admin-publicaciones h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.btn-borrar {
+    padding: 0.5em 1em;
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.btn-borrar:hover {
+    background: #c9302c;
+}
+/* Estilos para la página de registro */
+.registro {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.registro h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registro label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.registro input {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.registro input[type="file"] {
+    border: none;
+}
+
+.registro button {
+    padding: 0.8em;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.registro button:hover {
+    background: #555;
 }
